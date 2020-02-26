@@ -21,6 +21,4 @@ jobs:
         pip install md2pdf
     - name: Render PDF
       run: |
-        pwd
-        ls
-        md2pdf README.md README.pdf--theme=github
+        md2pdf README.md README.pdf --theme=github
