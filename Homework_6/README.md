@@ -5,6 +5,7 @@ Homework 6 involves the creation of Robotic Operating System (ROS) nodes with th
   2. R Pi 2 (attatched to racecar): create a second ROS node that subscribes to button/joystick data and creates a corresponding PWM signals to control racecar throttle and steering. This should also *publish* data from the attached camera.
   3. Ubuntu VM: the third ROS node subscribes to all published data from the car and controller nodes, acting as a data logger. 
     - throttle and steering should be saved as a CSV via pandas library (python)
+    - include sample data collected in a CSV file (will be in sample_data folder)
 - Convert this README.md into a PDF to be submitted
 - Document the assignment in a GitHub Repo
 
