@@ -18,12 +18,13 @@ jobs:
         python -m pip install --upgrade pip
     - name: install md2pdf
       run: |
-        pip install markdown2pdf3 pypandoc
+        pip install md2pdf
     - name: Render PDF
       run: |
-        md2pdf README.md --theme=github
+        curl https://raw.githubusercontent.com/jfthuong/markdown2pdf/master/markdown2pdf/themes/github.css -o github.css
+        md2pdf --css=github.css README.md README.pdf
         cd Homework_6/
-        md2pdf README.md --theme=github
+        md2pdf --css=github.css README.md README.pdf
         cd ~/    
     - name: Commit files
       run: |
