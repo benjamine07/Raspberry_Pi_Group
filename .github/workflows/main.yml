@@ -21,7 +21,7 @@ jobs:
         pip install md2pdf
     - name: Render PDF
       run: |
-        curl https://raw.githubusercontent.com/jfthuong/markdown2pdf/master/markdown2pdf/themes/github.css -o github.css
+        curl https://raw.githubusercontent.com/jfthuong/markdown2pdf/master/markdown2pdf/themes/github.css -o ./github.css
         md2pdf --css=github.css README.md README.pdf
         cd Homework_6/
         md2pdf --css=github.css README.md README.pdf
