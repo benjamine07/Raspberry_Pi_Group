@@ -21,13 +21,11 @@ jobs:
         pip install md2pdf
     - name: Render PDF
       run: |
-        pwd
-        ls
         curl https://raw.githubusercontent.com/jfthuong/markdown2pdf/master/markdown2pdf/themes/github.css -o ./github.css
         ls -l
-        md2pdf --css=github.css README.md README.pdf
+        md2pdf --css=/home/runner/work/Raspberry_Pi_Group/Raspberry_Pi_Group/github.css README.md README.pdf
         cd Homework_6/
-        md2pdf --css=github.css README.md README.pdf
+        md2pdf --css=/home/runner/work/Raspberry_Pi_Group/Raspberry_Pi_Group/github.css README.md README.pdf
         cd ~/    
     - name: Commit files
       run: |
