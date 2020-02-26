@@ -26,7 +26,7 @@ Now initialize the ROS package workspace:
     source devel/setup.bash
 Create a new ROS package with name "my_ROS_pkg" and re-init the workspace
 
-    catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
+    catkin_create_pkg my_ROS_pkg std_msgs rospy roscpp
     catkin_make
 
 ### Notes About the Racecar Setup
