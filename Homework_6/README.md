@@ -1,3 +1,4 @@
+*This Repo can be found at https://github.com/benjamine07/Raspberry_Pi_Group*
 # Assignment Overview
 Homework 6 involves the creation of Robotic Operating System (ROS) nodes with the end goal of controlling an RC racecar and recording data from the vehicle. The key tasks are:
 - Create three ROS nodes to communicate with each other of the same LAN
