@@ -13,14 +13,19 @@ Homework 6 involves the creation of Robotic Operating System (ROS) nodes with th
 ### How to Create a ROS package
 #### Linux
 *adapted from https://www.ros.org*
+
 Once ROS is installed on your system (see [here](http://wiki.ros.org/ROS/Installation) for instructions) you need to create a ROS package:
+
 Create a workspace in any location of your choosing and move your working directory to it. your home directory is a good place for most cases.
+
     mkdir ~/catkin_ws
     cd ~/catkin_ws
 Now initialize the ROS package workspace:
+
     catkin_make
     source devel/setup.bash
 Create a new ROS package with name "my_ROS_pkg" and re-init the workspace
+
     catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
     catkin_make
 
