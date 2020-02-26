@@ -18,7 +18,7 @@ jobs:
         python -m pip install --upgrade pip
     - name: install md2pdf
       run: |
-        pip install markdown2pdf3
+        pip install markdown2pdf3 pypandoc
     - name: Render PDF
       run: |
         md2pdf README.md --theme=github
