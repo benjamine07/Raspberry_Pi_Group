@@ -27,6 +27,7 @@ jobs:
         cd Homework_6/
         md2pdf --css=/home/runner/work/Raspberry_Pi_Group/Raspberry_Pi_Group/github.css README.md README.pdf
         cd ~/    
+        rm github.css
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
