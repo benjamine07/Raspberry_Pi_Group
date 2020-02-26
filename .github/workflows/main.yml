@@ -24,7 +24,7 @@ jobs:
         pwd
         ls
         curl https://raw.githubusercontent.com/jfthuong/markdown2pdf/master/markdown2pdf/themes/github.css -o ./github.css
-        ls
+        ls -l
         md2pdf --css=github.css README.md README.pdf
         cd Homework_6/
         md2pdf --css=github.css README.md README.pdf
