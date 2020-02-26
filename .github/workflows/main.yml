@@ -22,4 +22,6 @@ jobs:
         pip install markdown2pdf
     - name: Render PDF
       run: |
-        md2pdf README.md --theme=github
+        pwd
+        ls
+        md2pdf ./README.md --theme=github
