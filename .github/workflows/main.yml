@@ -18,17 +18,17 @@ jobs:
         python -m pip install --upgrade pip
     - name: install md2pdf
       run: |
-        pip install md2pdf
+        pip install markdown2pdf3
     - name: Render PDF
       run: |
-        md2pdf --theme=github README.md README.pdf
+        md2pdf README.md --theme=github
         cd Homework_6/
-        md2pdf --theme=github README.md README.pdf
+        md2pdf README.md --theme=github
         cd ~/    
     - name: Commit files
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.name "PDF Generator"
         git add .
         git commit -m "Updated PDF ver. of README" -a
     - name: Push changes
