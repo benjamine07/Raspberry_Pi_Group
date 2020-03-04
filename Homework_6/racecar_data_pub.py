@@ -29,8 +29,9 @@ def racecar_data_pub():
 
     # loop forever and publish payloads
     while not rospy.is_shutdown():
-        steering_pos = 0.00 # placeholder data. Should come from game controller
-        throttle_pos = 0.00 # placeholder data. Should come from game controller
+        # data.axes should come from the game controller and be in range [-1.0, 1.0]
+        steering_pos = abs(0.05*data.axes[0]-0.15)
+        throttle_pos = 0.05*data.axes[1]+0.15
         racecar_data = [steering_pos, throttle_pos]
         # publish topic
         rospy.loginfo(racecar_data)
