@@ -32,10 +32,10 @@ def callback(data):
         steering.pulse(data.data[0])
 
     if data.data[1] > 0.20:
-        rospy.loginfo(rospy.get_caller_id() + '%s greater than maximum of 0.20, setting to max', data,data[0])
+        rospy.loginfo(rospy.get_caller_id() + '%s greater than maximum of 0.20, setting to max', data,data[1])
         throttle.pulse(0.20)
     elif data.data[1] < 0.10:
-        rospy.loginfo(rospy.get_caller_id() + '%s less than minimum of 0.10, setting to min', data,data[0])
+        rospy.loginfo(rospy.get_caller_id() + '%s less than minimum of 0.10, setting to min', data,data[1])
         throttle.pulse(0.10)
     else:
         throttle.pulse(data.data[1])
