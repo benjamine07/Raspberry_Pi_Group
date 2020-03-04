@@ -5,7 +5,15 @@
 # where PACKAGENAME is the name of the ros package this file is in       |
 # and EXECUTABLE is the name of this file                                |
 #------------------------------------------------------------------------+
+# racecar_data_pub.py
 
+# This file should be run in a ROS package on a Raspberry Pi with a USB game controller attached
+# This code publishes to a single ROS topic containing a len 2 array holding the PWM duty cycle
+# that is obtained from the game controller. In this way we are able to read controller data
+# and send it to another Raspberry Pi to controll the racecar. Both Pis are required to have a
+# network connection to each other
+
+#-------------------------------------------------------------------------
 # import necessary libraries for ros methods
 from std_msgs.msg import Float32MultiArray
 

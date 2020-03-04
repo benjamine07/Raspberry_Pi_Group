@@ -5,7 +5,14 @@
 # where PACKAGENAME is the name of the ros package this file is in       |
 # and EXECUTABLE is the name of this file                                |
 #------------------------------------------------------------------------+
+# racecar_data_sub.py
 
+# This file should be run in a ROS package on a Raspberry Pi that is conected to the racecar
+# It requires the a PiHat for PWM generation, see: https://github.com/lbaitemple/rpiHAT for details
+# This code subscribes to a single ROS topic containing a len 2 array holding the PWM duty cycle
+# that is output to the racecar servo and ESC
+
+#-------------------------------------------------------------------------
 # import necessary libraries for ros methods
 import rospy
 from std_msgs.msg import Float32MultiArray
