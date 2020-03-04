@@ -11,6 +11,7 @@ import rospy
 from std_msgs.msg import Float32MultiArray
 
 # import libraries for PWM servo/ESC control
+# https://github.com/lbaitemple/rpiHAT
 from rpiHAT import ServoNT
 import time
 import sys
