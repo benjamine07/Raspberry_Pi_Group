@@ -1,5 +1,5 @@
 # Raspberry Pi Robotics - Group 1
-This is a repository for sharing the work on the Robotics class. The code, documentation, and toehr related files for each projects will be organized and collaborated here. 
+This is a repository for sharing the work on the Robotics class. The code, documentation, and other related files for each projects will be organized and collaborated here. 
 
 ## About this README
 This readme provides a general overview of this repo. Individual assignments may have their own additional documentation within the respective sub folders as necessary.
