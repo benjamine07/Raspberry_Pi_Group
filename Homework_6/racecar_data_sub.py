@@ -27,25 +27,27 @@ import sys
 # this is called when something we subscribed to is published
 def callback(data):
     # log the data
-    rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.data)
+    rospy.loginfo(rospy.get_caller_id() + 'I heard %s', data.axes)
+    steering_pos = abs(0.05*data.axes[0]-0.15)
+    throttle_pos = 0.05*data.axes[1]+0.15
     # control the car, we expect published data to be in duty cycle in range [0.10, 0.20]
-    if data.data[0] > 0.20:
+    if steering_pos > 0.20:
         rospy.loginfo(rospy.get_caller_id() + '%s greater than maximum of 0.20, setting to max', data.data[0])
         steering.pulse(0.20)
-    elif data.data[0] < 0.10:
+    elif steering_pos < 0.10:
         rospy.loginfo(rospy.get_caller_id() + '%s less than minimum of 0.10, setting to min', data.data[0])
         steering.pulse(0.10)
     else:
-        steering.pulse(data.data[0])
+        steering.pulse(steering_pos)
 
-    if data.data[1] > 0.20:
+    if throttle_pos > 0.20:
         rospy.loginfo(rospy.get_caller_id() + '%s greater than maximum of 0.20, setting to max', data.data[1])
         throttle.pulse(0.20)
-    elif data.data[1] < 0.10:
+    elif throttle_pos < 0.10:
         rospy.loginfo(rospy.get_caller_id() + '%s less than minimum of 0.10, setting to min', data.data[1])
         throttle.pulse(0.10)
     else:
-        throttle.pulse(data.data[1])
+        throttle.pulse(throttle_pos)
 
 #-------------------------------------------------------------------------
 # this is the main function where subscriptions are setup
