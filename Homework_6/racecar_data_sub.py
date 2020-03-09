@@ -61,7 +61,7 @@ def racecar_data_sub():
     rospy.init_node('racecar_data_sub', anonymous=True)
 
     # set up subscriptions to each topic and callback funcs
-    rospy.Subscriber('racecar/controller_data', Float32MultiArray, callback)
+    rospy.Subscriber('/joy', Float32MultiArray, callback)
 
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
