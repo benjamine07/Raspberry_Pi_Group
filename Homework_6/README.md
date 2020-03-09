@@ -30,5 +30,5 @@ Create a new ROS package with name "my_ROS_pkg" and re-init the workspace
     catkin_make
 
 ### Notes About the Racecar Setup
-The Racecar is a Traxxas 4WD RC car. The motor ESC and steering servo are controlled by an on-board Raspberry Pi 3b (R Pi). The R Pi generates the PWM signals needed byt he ESC and servo via a hardware module that communicates with the R Pi via I2C.
+The Racecar is a Traxxas 4WD RC car. The motor ESC and steering servo are controlled by an on-board Raspberry Pi 3b (R Pi). The R Pi generates the PWM signals needed by the ESC and servo via a hardware module that communicates with the R Pi via I2C.
 The software is several ROS nodes used for development of the vehicle control software. 
