@@ -1,0 +1,8 @@
+matplotlib
+pillow
+future
+opencv-python
+opencv-python-headless
+numpy
+cython
+pandas
