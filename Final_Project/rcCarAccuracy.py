@@ -54,7 +54,7 @@ for index in range(len(data)):
               (index + 1, 100 * servo_count / (index + 1), ))
 
 print("servo: %2.2f" % (100 * servo_count / (index + 1)))
-avg_time = accum_time / range(len(data))
+avg_time = accum_time / len(data)
 print("Average prediction time:", avg_time)
 
 #------------------------------Timing-Data------------------------------
