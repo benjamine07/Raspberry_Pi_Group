@@ -4,7 +4,7 @@
     "_": "shape of the image [width, height]",
     "shape": [100, 100],
     
-    "batch_size": 150,
+    "batch_size": 15,
     "epochs": 10,
     
 	"cuda": false,
