@@ -11,7 +11,8 @@
 - For both training and testing a epoch size of 10 was used
     - This means that an entire dataset is passed forward and backward through the neural network ten times for one                iteration
     
-[Servo Model](https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Servo%20Model.png)
+![Servo Model]
+(https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Servo%20Model.png)
 
 #### Task 1 - A Servo Model with MSE less than 0.7
 
