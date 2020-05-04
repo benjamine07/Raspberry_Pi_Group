@@ -12,7 +12,7 @@
     - This means that an entire dataset is passed forward and backward through the neural network ten times for one                iteration
     
 ![Servo Model]
-(https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Servo%20Model.png)
+(https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Servo_Model.png)
 
 #### Task 1 - A Servo Model with MSE less than 0.7
 
