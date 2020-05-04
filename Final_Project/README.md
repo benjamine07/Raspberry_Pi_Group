@@ -53,3 +53,13 @@
     ```bash
     pip3 install -r requirements.txt
     ```
+
+- Run `rcCarAccuracy.py` to test model.
+    ```bash
+    git clone https://github.com/benjamine07/Raspberry_Pi_Group.git
+    cd Raspberry_Pi_Group/Final_Project
+    python3 rcCarAccuracy.py
+    ```
+
+    - you will see results similar to below:
+    ![avg_time_pi](https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/avg_time_pi.png)
