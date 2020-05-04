@@ -55,7 +55,7 @@
     ```
     
 ### Pi Performance
-![Pi_Performance](Final_Project/Pi_Performance.jpeg)
+![Pi_Performance](https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Pi_Performance.jpeg)
 
 ### Pi Accuracy
-![Pi_Accuracy](Final_Project/Pi_Accuracy.jpeg)
+![Pi_Accuracy](https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Pi_Accuracy.jpeg)
