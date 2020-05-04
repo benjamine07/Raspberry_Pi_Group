@@ -1,5 +1,14 @@
 # README for Group 1 Final Project
 
+## Servo Training and Testing
+- Servo training and testing parameters were defined using the set_servo_train.json and set_servo_test.json respectively
+- For training the model a batch size of 15 was used for accuracy
+    - The smaller the batch size of data being passed through the neural network the more accurate the model
+- For testing the model a batch size of 20 was used for small loss
+    - A larger batch size significantly increases the speed for testing the model
+- For both training and testing a epoch size of 10 was used
+    - This means that an entire dataset is passed forward and backward through the neural network ten times for one                iteration
+
 ### GitHub Link - https://github.com/benjamine07/Raspberry_Pi_Group/tree/master/Final_Project
 
 #### Task 1 - A Servo Model with MSE less than 0.7
