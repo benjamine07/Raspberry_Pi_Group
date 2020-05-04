@@ -53,7 +53,13 @@
     ```bash
     pip3 install -r requirements.txt
     ```
-    
+- run `rcCarAccuracy.py` to see results
+    ```bash
+    git clone https://github.com/benjamine07/Raspberry_Pi_Group.git
+    cd Raspberry_Pi_Group/Final_Project
+    python3 rcCarAccuracy.py
+    ```
+
 ### Pi Performance
 ![Pi_Performance](https://github.com/benjamine07/Raspberry_Pi_Group/blob/master/Final_Project/Pi_Performance.jpeg)
 
