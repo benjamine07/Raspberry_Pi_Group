@@ -10,6 +10,8 @@
     - A larger batch size significantly increases the speed for testing the model
 - For both training and testing a epoch size of 10 was used
     - This means that an entire dataset is passed forward and backward through the neural network ten times for one                iteration
+    
+[Servo Model]()
 
 #### Task 1 - A Servo Model with MSE less than 0.7
 
