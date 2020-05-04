@@ -53,3 +53,9 @@
     ```bash
     pip3 install -r requirements.txt
     ```
+    
+### Pi Performance
+![Pi_Performance](Final_Project/Pi_Performance.jpeg)
+
+### Pi Accuracy
+![Pi_Accuracy](Final_Project/Pi_Accuracy.jpeg)
