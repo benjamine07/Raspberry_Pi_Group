@@ -33,13 +33,14 @@ with open(SETTINGS) as fp:
     servo_pred.load_model(content['servo_model'])
 
 servo_count = 0
-
+accum_time = 0
 # make predictions from csv and print value
 for index in range(len(data)):
     _, servo, motor = parsedata.parse_data(data["image"][index])
-
+    start_time = time.time()
     pred_servo = servo_pred.predict(data["image"][index])
-
+    end_time = time.time()
+    accum_time += (end_time - start_time)
     if abs(servo - pred_servo) <= content['error_margin']:
         # print(servo)
         servo_count += 1
@@ -53,6 +54,8 @@ for index in range(len(data)):
               (index + 1, 100 * servo_count / (index + 1), ))
 
 print("servo: %2.2f" % (100 * servo_count / (index + 1)))
+avg_time = accum_time / range(len(data))
+print("Average prediction time:", avg_time)
 
 #------------------------------Timing-Data------------------------------
 # arbitrary image to test timing
@@ -63,4 +66,4 @@ servov = servo_pred.predict(IMAGE_FILE)
 end_time = time.time()
 tot_time = end_time-start_time
 print(servov)
-print("Total time:", tot_time)
+print("Total time for 1 image:", tot_time)
